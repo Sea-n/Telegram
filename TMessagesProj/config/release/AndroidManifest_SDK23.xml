@@ -10,8 +10,8 @@
     <uses-feature android:name="android.hardware.LOCATION" android:required="false" />
 
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-    <uses-permission android:name="org.telegram.plus.permission.MAPS_RECEIVE"/>
-    <uses-permission android:name="org.telegram.plus.permission.C2D_MESSAGE" />
+    <uses-permission android:name="taipei.sean.telegram.plus.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="taipei.sean.telegram.plus.permission.C2D_MESSAGE" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -19,10 +19,10 @@
     <uses-permission android:name="android.permission.READ_CALL_LOG" />
     <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
 
-    <permission android:name="org.telegram.plus.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
-    <permission android:name="org.telegram.plus.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <permission android:name="taipei.sean.telegram.plus.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
+    <permission android:name="taipei.sean.telegram.plus.permission.C2D_MESSAGE" android:protectionLevel="signature" />
 	
-	<permission android:name="org.telegram.plus.android.provider.ACCESS" android:protectionLevel="signature"/>
+	<permission android:name="taipei.sean.telegram.plus.android.provider.ACCESS" android:protectionLevel="signature"/>
 
 
     <application
@@ -46,7 +46,7 @@
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
                 <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
-                <category android:name="org.telegram.plus" />
+                <category android:name="taipei.sean.telegram.plus" />
             </intent-filter>
         </receiver>
         <service
@@ -86,11 +86,11 @@
             android:exported="false" />
 
 	<provider
-            android:authorities="org.telegram.plus.android.provider.content"
+            android:authorities="taipei.sean.telegram.plus.android.provider.content"
             android:name="org.telegram.messenger.ModuleContentProvider"
             android:label="@string/AppName"
             android:exported="true"
-            android:permission="org.telegram.plus.android.provider.ACCESS" />
+            android:permission="taipei.sean.telegram.plus.android.provider.ACCESS" />
 
     </application>
 

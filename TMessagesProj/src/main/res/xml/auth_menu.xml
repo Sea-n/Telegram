@@ -5,8 +5,8 @@
     <PreferenceScreen android:key="account_settings"
         android:title="@string/AccountSettings"
         android:summary="">
-        <intent android:action="org.telegram.plus.OPEN_ACCOUNT"
-            android:targetPackage="org.telegram.plus"
+        <intent android:action="taipei.sean.telegram.plus.OPEN_ACCOUNT"
+            android:targetPackage="taipei.sean.telegram.plus"
             android:targetClass="org.telegram.ui.LaunchActivity"/>
     </PreferenceScreen>
 </PreferenceScreen>

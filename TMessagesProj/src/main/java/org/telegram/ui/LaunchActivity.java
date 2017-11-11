@@ -14,7 +14,6 @@ import android.content.ContentResolver;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.database.Cursor;
@@ -27,8 +26,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.provider.ContactsContract;
-import android.provider.Settings;
-import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.util.TypedValue;
 import android.view.ActionMode;
@@ -46,8 +43,6 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import net.hockeyapp.android.LoginManager;
 
 import org.telegram.PhoneFormat.PhoneFormat;
 import org.telegram.messenger.AndroidUtilities;
@@ -501,7 +496,7 @@ public class LaunchActivity extends Activity implements ActionBarLayout.ActionBa
                     drawerLayoutContainer.closeDrawer(false);
                 } else if (id == versionRow) {
                     try {
-                        Intent pickIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=org.telegram.plus"));
+                        Intent pickIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=taipei.sean.telegram.plus"));
                         startActivityForResult(pickIntent, 502);
                     } catch (Exception e) {
                         FileLog.e("tmessages", e);
@@ -721,48 +716,7 @@ public class LaunchActivity extends Activity implements ActionBarLayout.ActionBa
             backgroundTablet.setVisibility(!actionBarLayout.fragmentsStack.isEmpty() ? View.GONE : View.VISIBLE);
         }
     }
-    //plus
-    private void verifyLogin(SharedPreferences prefs){
-        String id = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
-        int code = 0;
-        try{
-            PackageInfo pInfo = ApplicationLoader.applicationContext.getPackageManager().getPackageInfo(ApplicationLoader.applicationContext.getPackageName(), 0);
-            code = pInfo.versionCode / 10;
-        } catch (Exception e) {
-            FileLog.e("tmessages", e);
-        }
-        int version = prefs.getInt("code", -1);
-        String did = prefs.getString("did", null);
 
-        int currentMode = prefs.getInt("mode", -1);
-        String auid = prefs.getString("auid", null);
-        //Log.e("verifyLogin ", "id " + id + " did " + did + " currentMode " + currentMode + " auid " + auid + " code " + code + " version " + version);
-        if (currentMode == -1 || currentMode >= 1 && auid == null || !id.equals(did) /*|| version != code*/) {
-            SharedPreferences.Editor editor = prefs.edit();
-            editor.remove("auid");
-            editor.remove("iuid");
-            editor.remove("mode");
-            if (!id.equals(did)) {
-                editor.putString("did", id);
-            }
-            if (version != code) {
-                editor.putInt("code", code);
-            }
-            editor.apply();
-            //LoginManager.register(this, BuildVars.HOCKEY_APP_HASH_DEBUG, BuildVars.HOCKEY_APP_HASH_DEBUG_SECRET, LoginManager.LOGIN_MODE_EMAIL_PASSWORD, this.getClass());
-            LoginManager.register(this, BuildVars.HOCKEY_APP_HASH_DEBUG, BuildVars.HOCKEY_APP_HASH_DEBUG_SECRET, LoginManager.LOGIN_MODE_VALIDATE, this.getClass());
-            LoginManager.verifyLogin(this, getIntent());
-            //Log.e("verifyLogin ", "2 id " + id + " did " + did + " currentMode " + currentMode + " auid " + auid);
-        }
-
-        if (currentMode == 2 && id.equals(did) && auid != null) {
-            SharedPreferences.Editor editor = prefs.edit();
-            editor.putBoolean("pass", true);
-            editor.putInt("code", code);
-            editor.apply();
-            pass = true;
-        }
-    }
     private void showPasscodeActivity() {
         if (passcodeView == null) {
             return;
@@ -1251,7 +1205,7 @@ public class LaunchActivity extends Activity implements ActionBarLayout.ActionBa
                                 }
                             }
                         }
-                    } else if (intent.getAction().equals(/*"org.telegram.messenger.OPEN_ACCOUNT"*/"org.telegram.plus.OPEN_ACCOUNT")) {
+                    } else if (intent.getAction().equals(/*"org.telegram.messenger.OPEN_ACCOUNT"*/"taipei.sean.telegram.plus.OPEN_ACCOUNT")) {
                         open_settings = 1;
                     } else if (intent.getAction().equals("new_dialog")) {
                         open_new_dialog = 1;
@@ -2174,17 +2128,9 @@ public class LaunchActivity extends Activity implements ActionBarLayout.ActionBa
             }
             passcodeView.onResume();
         }
-        if(getPackageName().contains("org.telegram.plus.beta")) {
+        if(getPackageName().contains("taipei.sean.telegram.plus.beta")) {
             AndroidUtilities.checkForCrashes(this);
             AndroidUtilities.checkForUpdates(this);
-        }
-        if(BuildConfig.DEBUG){
-            SharedPreferences prefs = ApplicationLoader.applicationContext.getSharedPreferences("net.hockeyapp.android.login", 0);
-            pass = prefs.getBoolean("pass", false);
-            //pass = true;
-            if(!pass){
-                verifyLogin(prefs);
-            }
         }
         ConnectionsManager.getInstance().setAppPaused(false, false);
         updateCurrentConnectionState();

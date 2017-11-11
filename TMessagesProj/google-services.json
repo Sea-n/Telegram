@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "277707983754",
+    "firebase_url": "https://telegreat-plus.firebaseio.com",
+    "project_id": "telegreat-plus",
+    "storage_bucket": "telegreat-plus.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:277707983754:android:e2803a2066ad4bea",
+        "android_client_info": {
+          "package_name": "taipei.sean.telegram.plus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "277707983754-l8m7ddg3v7mletc7bn0vtm381g12kiv0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMMymUn-ZFiv4V7GdlpZ8NHahk6-YIaWw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

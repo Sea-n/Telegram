@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-  <string name="AppName">טלגרם</string>
+  <string name="AppName">Telegreat</string>
   <string name="LanguageName">עברית</string>
   <string name="LanguageNameInEnglish">Hebrew</string>
   <string name="LanguageCode">iw</string>

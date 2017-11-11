@@ -3,9 +3,9 @@
 
 
 <resources>
-    <string name="AppName">Plus Messenger</string>
-    <string name="AppNameBeta">Plus Messenger Beta</string>
-    <string name="ShortAppName">Plus</string>
+    <string name="AppName">Telegreat</string>
+    <string name="AppNameBeta">Telegreat Beta</string>
+    <string name="ShortAppName">Telegreat</string>
     <string name="LanguageName">English</string>
     <string name="English">English</string>
     <string name="LanguageNameInEnglish">English</string>

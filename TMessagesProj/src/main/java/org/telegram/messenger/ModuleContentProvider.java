@@ -16,8 +16,8 @@ import java.io.File;
 public class ModuleContentProvider extends ContentProvider {
     private static final String TAG = "ModuleContentProvider";
 
-    private static final String AUTHORITY = "org.telegram.plus.android.provider.content";
-    private static final String AUTHORITY_BETA = "org.telegram.plus.beta.android.provider.content";
+    private static final String AUTHORITY = "taipei.sean.telegram.plus.android.provider.content";
+    private static final String AUTHORITY_BETA = "taipei.sean.telegram.plus.beta.android.provider.content";
 
     public static Uri THEME_URI = Uri.parse("content://" + AUTHORITY + "/theme");
     public static Uri GET_NAME = Uri.parse("content://" + AUTHORITY + "/name");

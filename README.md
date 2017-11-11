@@ -46,7 +46,7 @@ Join our G+ community to report bugs, share ideas, get in touch with other Plus 
 Follow our [Official plus channel:] (https://telegram.me/plusmsgr)
 
 
-This repo contains the source code for [Plus Messenger App for Android](https://play.google.com/store/apps/details?id=org.telegram.plus).
+This repo contains the source code for [Plus Messenger App for Android](https://play.google.com/store/apps/details?id=taipei.sean.telegram.plus).
 
 ### USAGE
 **Beware of using the dev branch and uploading it to any markets, in many cases it not will work as expected**.
