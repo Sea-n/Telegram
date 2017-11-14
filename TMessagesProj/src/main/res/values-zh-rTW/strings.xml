@@ -2085,4 +2085,7 @@
     <string name="DoNotShowUnmutedFirst">不要先顯示未關閉通知的</string>
     <string name="SortUnmutedFirst">排序：未關閉通知的優先</string>
     <string name="ShowUserBio">顯示用戶個性簽名</string>
+
+    <!-- Sean -->
+    <string name="IgnoreBlock">忽略被封鎖的使用者</string>
 </resources>

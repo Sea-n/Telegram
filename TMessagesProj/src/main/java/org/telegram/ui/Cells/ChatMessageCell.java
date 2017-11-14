@@ -36,7 +36,6 @@ import android.text.TextUtils;
 import android.text.style.CharacterStyle;
 import android.text.style.ClickableSpan;
 import android.text.style.URLSpan;
-import android.util.Log;
 import android.util.StateSet;
 import android.view.Gravity;
 import android.view.MotionEvent;
@@ -51,12 +50,12 @@ import org.telegram.messenger.ApplicationLoader;
 import org.telegram.messenger.ChatObject;
 import org.telegram.messenger.ContactsController;
 import org.telegram.messenger.Emoji;
+import org.telegram.messenger.FileLoader;
+import org.telegram.messenger.FileLog;
 import org.telegram.messenger.ImageLoader;
 import org.telegram.messenger.ImageReceiver;
 import org.telegram.messenger.LocaleController;
 import org.telegram.messenger.MediaController;
-import org.telegram.messenger.FileLoader;
-import org.telegram.messenger.FileLog;
 import org.telegram.messenger.MessageObject;
 import org.telegram.messenger.MessagesController;
 import org.telegram.messenger.R;
@@ -66,6 +65,7 @@ import org.telegram.messenger.Utilities;
 import org.telegram.messenger.browser.Browser;
 import org.telegram.tgnet.ConnectionsManager;
 import org.telegram.tgnet.TLRPC;
+import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.Components.AvatarDrawable;
 import org.telegram.ui.Components.LinkPath;
 import org.telegram.ui.Components.RadialProgress;
@@ -73,7 +73,6 @@ import org.telegram.ui.Components.RoundVideoPlayingDrawable;
 import org.telegram.ui.Components.SeekBar;
 import org.telegram.ui.Components.SeekBarWaveform;
 import org.telegram.ui.Components.StaticLayoutEx;
-import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.Components.TypefaceSpan;
 import org.telegram.ui.Components.URLSpanBotCommand;
 import org.telegram.ui.Components.URLSpanMono;
@@ -342,6 +341,7 @@ public class ChatMessageCell extends BaseCell implements SeekBar.SeekBarDelegate
     private TLRPC.Chat currentChat;
     private TLRPC.FileLocation currentPhoto;
     private String currentNameString;
+    private boolean userBlocked;
 
     private TLRPC.User currentForwardUser;
     private TLRPC.User currentViaBotUser;
@@ -5175,6 +5175,7 @@ public class ChatMessageCell extends BaseCell implements SeekBar.SeekBarDelegate
 
         if (currentMessageObject.isFromUser()) {
             currentUser = MessagesController.getInstance().getUser(currentMessageObject.messageOwner.from_id);
+            userBlocked = MessagesController.getInstance().blockedUsers.contains(currentUser.id);
             if(!Theme.chatHideStatusIndicator && !UserObject.isUserSelf(currentUser))setStatusColor(currentUser);
         } else if (currentMessageObject.messageOwner.from_id < 0) {
             currentChat = MessagesController.getInstance().getChat(-currentMessageObject.messageOwner.from_id);
@@ -5511,6 +5512,12 @@ public class ChatMessageCell extends BaseCell implements SeekBar.SeekBarDelegate
             Theme.chat_msgGameTextPaint.setColor(Theme.usePlusTheme ? Theme.chatRTextColor : Theme.getColor(Theme.key_chat_messageTextOut));
             Theme.chat_msgGameTextPaint.linkColor = Theme.usePlusTheme ? Theme.chatRLinkColor : Theme.getColor(Theme.key_chat_messageLinkOut);
             Theme.chat_replyTextPaint.linkColor = Theme.usePlusTheme ? Theme.chatRLinkColor : Theme.getColor(Theme.key_chat_messageLinkOut);
+        } else if (Theme.seanIgnoreBlock && userBlocked) {
+            Theme.chat_msgTextPaint.setColor(Theme.getColor(Theme.key_windowBackgroundWhiteGrayText7));
+            Theme.chat_msgTextPaint.linkColor = Theme.getColor(Theme.key_windowBackgroundWhiteGrayText7);
+            Theme.chat_msgGameTextPaint.setColor(Theme.getColor(Theme.key_windowBackgroundWhiteGrayText7));
+            Theme.chat_msgGameTextPaint.linkColor = Theme.getColor(Theme.key_windowBackgroundWhiteGrayText7);
+            Theme.chat_replyTextPaint.linkColor = Theme.getColor(Theme.key_chat_messageLinkIn);
         } else {
             Theme.chat_msgTextPaint.setColor(Theme.usePlusTheme ? Theme.chatLTextColor : Theme.getColor(Theme.key_chat_messageTextIn));
             Theme.chat_msgTextPaint.linkColor = Theme.usePlusTheme ? Theme.chatLLinkColor : Theme.getColor(Theme.key_chat_messageLinkIn);
@@ -5680,12 +5687,18 @@ public class ChatMessageCell extends BaseCell implements SeekBar.SeekBarDelegate
                     nameX = currentBackgroundDrawable.getBounds().left + AndroidUtilities.dp(!mediaBackground && pinnedBottom ? 11 : 17) - nameOffsetX;
                 }
                 if (currentUser != null) {
-                    Theme.chat_namePaint.setColor(Theme.usePlusTheme && Theme.chatMemberColorCheck ? Theme.chatMemberColor : AvatarDrawable.getNameColorForId(currentUser.id));
+                    if (Theme.seanIgnoreBlock && userBlocked)
+                        Theme.chat_namePaint.setColor(Theme.getColor(Theme.key_windowBackgroundWhiteGrayText5));
+                    else
+                        Theme.chat_namePaint.setColor(Theme.usePlusTheme && Theme.chatMemberColorCheck ? Theme.chatMemberColor : AvatarDrawable.getNameColorForId(currentUser.id));
                 } else if (currentChat != null) {
                     if (ChatObject.isChannel(currentChat) && !currentChat.megagroup) {
                         Theme.chat_namePaint.setColor(Theme.usePlusTheme && Theme.chatMemberColorCheck ? Theme.chatMemberColor : AvatarDrawable.getNameColorForId(5));
                     } else {
-                        Theme.chat_namePaint.setColor(Theme.usePlusTheme && Theme.chatMemberColorCheck ? Theme.chatMemberColor : AvatarDrawable.getNameColorForId(currentChat.id));
+                        if (Theme.seanIgnoreBlock && userBlocked)
+                            Theme.chat_namePaint.setColor(Theme.getColor(Theme.key_windowBackgroundWhiteGrayText5));
+                        else
+                            Theme.chat_namePaint.setColor(Theme.usePlusTheme && Theme.chatMemberColorCheck ? Theme.chatMemberColor : AvatarDrawable.getNameColorForId(currentChat.id));
                     }
                 } else {
                     Theme.chat_namePaint.setColor(Theme.usePlusTheme && Theme.chatMemberColorCheck ? Theme.chatMemberColor : AvatarDrawable.getNameColorForId(0));

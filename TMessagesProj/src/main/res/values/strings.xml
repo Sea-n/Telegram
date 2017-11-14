@@ -2049,4 +2049,7 @@
     <string name="DoNotShowUnmutedFirst">Don\'t show unmuted first</string>
     <string name="SortUnmutedFirst">Sort: unmuted first</string>
     <string name="ShowUserBio">Show user bio</string>
+
+    <!-- Sean -->
+    <string name="IgnoreBlock">Ignore Blocked Users</string>
 </resources>

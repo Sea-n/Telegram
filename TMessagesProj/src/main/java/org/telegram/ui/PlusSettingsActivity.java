@@ -179,6 +179,8 @@ public class PlusSettingsActivity extends BaseFragment implements NotificationCe
     private int chatsToLoadRow;
     private int moveVersionToSettingsRow;
 
+    private int ignoreBlockRow;
+
     private boolean reseting = false;
     private boolean saving = false;
 
@@ -208,6 +210,7 @@ public class PlusSettingsActivity extends BaseFragment implements NotificationCe
         dialogsSectionRow = rowCount++;
         dialogsSectionRow2 = rowCount++;
 
+        ignoreBlockRow = rowCount++;   // Sean
         dialogsHideTabsCheckRow = rowCount++;
         dialogsTabsRow = -1;//rowCount++;
         dialogsManageTabsRow = rowCount++;
@@ -383,7 +386,13 @@ public class PlusSettingsActivity extends BaseFragment implements NotificationCe
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, final int i, long l) {
 
-                if (i == emojiPopupSize) {
+                if (i == ignoreBlockRow) {
+                    SharedPreferences preferences = ApplicationLoader.applicationContext.getSharedPreferences("plusconfig", Activity.MODE_PRIVATE);
+                    Theme.seanIgnoreBlock = !Theme.seanIgnoreBlock;
+                    SharedPreferences.Editor editor = preferences.edit();
+                    editor.putBoolean("ignoreBlock", Theme.seanIgnoreBlock);
+                    editor.apply();
+                } else if (i == emojiPopupSize) {
                     if (getParentActivity() == null) {
                         return;
                     }
@@ -1949,7 +1958,8 @@ public class PlusSettingsActivity extends BaseFragment implements NotificationCe
                     (i == chatCenterQuickBarBtnRow /*&& Theme.plusShowQuickBar*/) || (i == chatShowMembersQuickBarRow /*&& Theme.plusShowQuickBar*/) || i == chatSaveToCloudQuoteRow || i == chatSwipeToReplyRow ||
                     i == hideNotificationsIfPlayingRow || i == chatHideInstantCameraRow || i == chatDoNotHideStickersTabRow || i == chatPhotoViewerHideStatusBarRow || i == chatsToLoadRow ||
                     i == profileEnableGoToMsgRow || i == chatDrawSingleBigEmojiRow || i == dialogsLimitTabsCountersRow || i == chatMarkdownRow || i == moveVersionToSettingsRow ||
-                    i == dialogsShowAllInAdminTabRow || i == chatShowUserBioRow;
+                    i == dialogsShowAllInAdminTabRow || i == chatShowUserBioRow ||
+                    i == ignoreBlockRow;
         }
 
         @Override
@@ -2013,6 +2023,10 @@ public class PlusSettingsActivity extends BaseFragment implements NotificationCe
                 }  else if (i == mediaDownloadSection2) {
                     prefix = prefix + "8 ";
                 } else if (i > mediaDownloadSection2 && i < plusSettingsSectionRow2){
+                    prefix = prefix + "8." + (i - mediaDownloadSection2) + " ";
+                }  else if (i == mediaDownloadSection2) {
+                    prefix = prefix + "8 ";
+                } else if (i > mediaDownloadSection2 && i < plusSettingsSectionRow2) {
                     prefix = prefix + "8." + (i - mediaDownloadSection2) + " ";
                 }
             }
@@ -2145,7 +2159,10 @@ public class PlusSettingsActivity extends BaseFragment implements NotificationCe
                 TextCheckCell textCell = (TextCheckCell) view;
 
                 SharedPreferences preferences = ApplicationLoader.applicationContext.getSharedPreferences("plusconfig", Activity.MODE_PRIVATE);
-                if (i == disableAudioStopRow) {
+                if (i == ignoreBlockRow) {
+                    textCell.setTag("ignoreBlock");
+                    textCell.setTextAndCheck(prefix + LocaleController.getString("ignoreBlock", R.string.IgnoreBlock), preferences.getBoolean("ignoreBlock", true), true);
+                } if (i == disableAudioStopRow) {
                     textCell.setTag("disableAudioStop");
                     textCell.setTextAndCheck(prefix + LocaleController.getString("DisableAudioStop", R.string.DisableAudioStop), preferences.getBoolean("disableAudioStop", false), true);
                 } else if (i == disableMessageClickRow) {
@@ -2611,7 +2628,8 @@ public class PlusSettingsActivity extends BaseFragment implements NotificationCe
                     i == chatHideQuickBarOnScrollRow || i == chatCenterQuickBarBtnRow || i == chatShowMembersQuickBarRow || i == chatSaveToCloudQuoteRow || i == chatSwipeToReplyRow ||
                     i == hideNotificationsIfPlayingRow || i == chatHideInstantCameraRow || i == chatDoNotHideStickersTabRow || i == chatPhotoViewerHideStatusBarRow ||
                     i == profileEnableGoToMsgRow || i == dialogsDoNotChangeHeaderTitleRow || i == chatDrawSingleBigEmojiRow || i == dialogsLimitTabsCountersRow || i == chatMarkdownRow ||
-                    i == moveVersionToSettingsRow || i == dialogsShowAllInAdminTabRow || i == chatShowUserBioRow) {
+                    i == moveVersionToSettingsRow || i == dialogsShowAllInAdminTabRow || i == chatShowUserBioRow ||
+                    i == ignoreBlockRow) {
                 return 3;
             } else if (i == emojiPopupSize || i == dialogsTabsTextSizeRow || i == dialogsTabsHeightRow || i == dialogsPicClickRow || i == dialogsGroupPicClickRow || i == chatPhotoQualityRow
                     || i == toastNotificationSizeRow || i == toastNotificationPaddingRow || i == toastNotificationPositionRow || i == chatsToLoadRow || i == dialogsManageTabsRow) {

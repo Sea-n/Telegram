@@ -569,6 +569,8 @@ public class Theme {
     public static boolean plusShowUsername;
     public static boolean plusMoveVersionToSettings;
     public static boolean plusShowUserBio;
+    // Sean
+    public static boolean seanIgnoreBlock;
     //
     public static final String pkey_themeColor = "themeColor";
     public static final String pkey_dialogColor = "dialogColor";
@@ -4535,6 +4537,9 @@ public class Theme {
         plusShowUsername = preferences.getBoolean("showUsername", false);
         plusMoveVersionToSettings = preferences.getBoolean("moveVersionToSettings", false);
         plusShowUserBio = preferences.getBoolean("showUserBio", true);
+
+        // Sean
+        seanIgnoreBlock = preferences.getBoolean("ignoreBlock", true);
     }
 
     public static String[] bubblesNamesArray ={
