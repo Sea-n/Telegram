@@ -998,10 +998,6 @@ Ekipa Telegram</string>
   <string name="RowGradientBLTR">Lewy-dolny Prawy-górny</string>
   <string name="RowGradientList">Dodaj gradient do tła listy</string>
   <string name="Copied">%s skopiowano do schowka</string>
-  <string name="JoinChannel">
-
-Dołącz do oficjalnego kanału Plus Messengera:</string>
-  <string name="ChannelLink">https://telegram.me/plusmsgr</string>
   <string name="DownloadThemes">Pobierz motywy</string>
   <string name="OfficialChannel">Oficjalny kanał</string>
   <string name="DialogsSettings">Dialogi</string>

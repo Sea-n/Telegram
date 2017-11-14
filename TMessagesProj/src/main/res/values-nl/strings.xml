@@ -882,7 +882,6 @@
     <string name="TelegramFaq">Veelgestelde vragen</string>
     <string name="TelegramFaqUrl">https://telegram.org/faq</string>
     <string name="PrivacyPolicy">Privacybeleid</string>
-    <string name="PrivacyPolicyUrl">http://plusmessenger.org/privacy</string>
     <string name="DeleteLocalization">Vertaling verwijderen?</string>
     <string name="IncorrectLocalization">Ongeldig vertalingsbestand</string>
     <string name="Enabled">Inschakelen</string>
@@ -1884,9 +1883,6 @@
   <string name="RowGradientBLTR">Linkonder Rechtsboven</string>
   <string name="RowGradientList">Pas kleurovergang toe op lijstachtergrond</string>
   <string name="Copied">%s gekopieert naar het klembord</string>
-  <string name="JoinChannel">
-\n\nWordt lid van het officiële Plus Messenger kanaal:</string>
-    <string name="ChannelLink">https://telegram.me/plusmsgrnl</string>
   <string name="DownloadThemes">Thema\'s downloaden</string>
   <string name="OfficialChannel">Officieel kanaal</string>
   <string name="DialogsSettings">Dialogen</string>

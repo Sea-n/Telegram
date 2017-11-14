@@ -1163,8 +1163,6 @@
   <string name="RowGradientBLTR">左下右上</string>
   <string name="RowGradientList">应用渐变色到列表背景</string>
   <string name="Copied">%s 已复制到剪贴板</string>
-  <string name="JoinChannel">\n\n加入 Plus Messenger 官方频道：</string>
-  <string name="ChannelLink">https://telegram.me/plusmsgr</string>
   <string name="DownloadThemes">下载主题</string>
   <string name="OfficialChannel">官方频道</string>
   <string name="DialogsSettings">对话框</string>

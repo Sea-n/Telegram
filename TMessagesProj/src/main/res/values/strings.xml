@@ -884,7 +884,6 @@
     <string name="TelegramFaq">Telegram FAQ</string>
     <string name="TelegramFaqUrl">https://telegram.org/faq</string>
     <string name="PrivacyPolicy">Privacy Policy</string>
-    <string name="PrivacyPolicyUrl">http://plusmessenger.org/privacy</string>
     <string name="DeleteLocalization">Delete localization?</string>
     <string name="IncorrectLocalization">Incorrect localization file</string>
     <string name="Enabled">Enabled</string>
@@ -1886,8 +1885,8 @@
     <string name="RowGradientBLTR">Bottom-Left Top-Right</string>
     <string name="RowGradientList">Apply gradient to list background</string>
     <string name="Copied">%s copied to clipboard</string>
-    <string name="JoinChannel">\n\nJoin Plus Messenger official channel:</string>
-    <string name="ChannelLink">https://telegram.me/plusmsgr</string>
+    <string name="JoinChannel">\n\nJoin Telegreat official channel:</string>
+    <string name="ChannelLink">https://t.me/telegreat</string>
     <string name="DownloadThemes">Download themes</string>
     <string name="OfficialChannel">Official channel</string>
     <string name="DialogsSettings">Dialogs</string>
@@ -2052,4 +2051,5 @@
 
     <!-- Sean -->
     <string name="IgnoreBlock">Ignore Blocked Users</string>
+    <string name="PrivacyPolicyUrl">https://www.sean.taipei/</string>
 </resources>

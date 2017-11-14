@@ -809,7 +809,6 @@
   <string name="TelegramFaq">Oftaj demandoj</string>
   <string name="TelegramFaqUrl">https://telegram.org/faq</string>
   <string name="PrivacyPolicy">Privateca politiko</string>
-  <string name="PrivacyPolicyUrl">https://telegram.org/privacy</string>
   <string name="DeleteLocalization">Ĉu vi volas forigi la tradukdosieron?</string>
   <string name="IncorrectLocalization">Malĝusta tradukdosiero</string>
   <string name="Enabled">Ŝaltita</string>

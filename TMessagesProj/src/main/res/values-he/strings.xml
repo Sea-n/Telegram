@@ -778,7 +778,6 @@
   <string name="TelegramFaq">שאלות נפוצות על טלגרם</string>
   <string name="TelegramFaqUrl">https://telegram.org/faq</string>
   <string name="PrivacyPolicy">מדיניות פרטיות</string>
-  <string name="PrivacyPolicyUrl">https://telegram.org/privacy</string>
   <string name="DeleteLocalization">האם למחוק קובץ תרגום?</string>
   <string name="IncorrectLocalization">קובץ התרגום שגוי</string>
   <string name="Enabled">פעיל</string>
@@ -1739,9 +1738,6 @@
   <string name="RowGradientBLTR">למטה משמאל למעלה מימין</string>
   <string name="RowGradientList">החל שיפוע לרשימת רקע</string>
   <string name="Copied">%s הועתק ללוח</string>
-  <string name="JoinChannel">
-\n\nהתחבר לערוץ הרשמי של טלגרם פלוס:</string>
-  <string name="ChannelLink">https://telegram.me/plusmsgrhe</string>
   <string name="DownloadThemes">הורד עיצובים</string>
   <string name="OfficialChannel">ערוץ רשמי</string>
   <string name="DialogsSettings">תיבות דו שיח</string>

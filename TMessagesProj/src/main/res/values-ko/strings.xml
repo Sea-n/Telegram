@@ -882,7 +882,6 @@
     <string name="TelegramFaq">자주 묻는 질문</string>
     <string name="TelegramFaqUrl">https://telegram.org/faq/ko</string>
     <string name="PrivacyPolicy">개인정보 정책</string>
-    <string name="PrivacyPolicyUrl">http://plusmessenger.org/privacy</string>
     <string name="DeleteLocalization">언어를 삭제할까요?</string>
     <string name="IncorrectLocalization">언어 파일이 올바르지 않습니다.</string>
     <string name="Enabled">켜기</string>

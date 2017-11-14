@@ -549,7 +549,6 @@
   <string name="TelegramFaq">Телеграм ЧЗВ</string>
   <string name="TelegramFaqUrl">https://telegram.org/faq</string>
   <string name="PrivacyPolicy">Декларация за поверителност</string>
-  <string name="PrivacyPolicyUrl">http://plusmessenger.org/privacy</string>
   <string name="DeleteLocalization">Изтриване на локализация?</string>
   <string name="IncorrectLocalization">Неправилен файл за локализация</string>
   <string name="Enabled">Активирано</string>
@@ -1343,9 +1342,6 @@
   <string name="RowGradientBLTR">От долу-ляво към горе-дясно</string>
   <string name="RowGradientList">Приложи преливане към списъка</string>
   <string name="Copied">Копирахте %s в буферната памет</string>
-  <string name="JoinChannel">
-\n\nЕлате в официалния канал на Плюс Messenger:</string>
-  <string name="ChannelLink">https://telegram.me/plusmsgr</string>
   <string name="DownloadThemes">Изтегляне на теми</string>
   <string name="OfficialChannel">Официален канал</string>
   <string name="DialogsSettings">Диалози</string>

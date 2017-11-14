@@ -882,7 +882,6 @@
     <string name="TelegramFaq">الأسئلة الشائعة عن تيليجرام</string>
     <string name="TelegramFaqUrl">https://telegram.org/faq/ar</string>
     <string name="PrivacyPolicy">سياسة الخصوصية</string>
-    <string name="PrivacyPolicyUrl">http://plusmessenger.org/privacy</string>
     <string name="DeleteLocalization">حذف التعريب؟</string>
     <string name="IncorrectLocalization">ملف التعريب غير صحيح</string>
     <string name="Enabled">تمكين</string>
@@ -1885,9 +1884,6 @@
   <string name="RowGradientBLTR">أسفل - أعلى اليسار - يمين</string>
   <string name="RowGradientList">تطبيق التدرج الوني في  خلفية القائمة</string>
   <string name="Copied">%s نسخ إلى الحافظة</string>
-  <string name="JoinChannel">
-n\n\ انضم لقناة بلس ماسنجر الرسمية</string>
-  <string name="ChannelLink">https://telegram.me/plusmsgr</string>
   <string name="DownloadThemes">تحميل الثيمات</string>
   <string name="OfficialChannel">القناة الرسمية</string>
   <string name="DialogsSettings">المحادثات</string>

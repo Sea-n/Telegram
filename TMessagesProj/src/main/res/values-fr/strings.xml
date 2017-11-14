@@ -774,7 +774,6 @@
   <string name="TelegramFaq">FAQ de Telegram</string>
   <string name="TelegramFaqUrl">https://telegram.org/faq</string>
   <string name="PrivacyPolicy">Politique de confidentialité</string>
-  <string name="PrivacyPolicyUrl">http://plusmessenger.org/privacy</string>
   <string name="DeleteLocalization">Supprimer la langue ?</string>
   <string name="IncorrectLocalization">Fichier linguistique incorrect</string>
   <string name="Enabled">Activé</string>
@@ -1740,8 +1739,6 @@ de votre appel Telegram</string>
   <string name="RowGradientBLTR">Bas-Gauche Haut-Droite</string>
   <string name="RowGradientList">Appliquer un dégradé au fond de la </string>
   <string name="Copied">%s copiés dans le presse papier</string>
-  <string name="JoinChannel">\n\nRejoindre le canal officiel de Plus Messenger:</string>
-  <string name="ChannelLink">https://telegram.me/plusmsgr</string>
   <string name="DownloadThemes">Télécharger des thèmes</string>
   <string name="OfficialChannel">Chaîne officielle </string>
   <string name="DialogsSettings">Dialogues</string>

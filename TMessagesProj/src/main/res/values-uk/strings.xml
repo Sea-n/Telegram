@@ -870,7 +870,6 @@
   <string name="TelegramFaq">Telegram ЧаПи</string>
   <string name="TelegramFaqUrl">https://telegram.org/faq</string>
   <string name="PrivacyPolicy">Політика конфіденційності</string>
-  <string name="PrivacyPolicyUrl">http://plusmessenger.org/privacy</string>
   <string name="DeleteLocalization">Видалити локалізацію?</string>
   <string name="IncorrectLocalization">Хибний файл локалізації</string>
   <string name="Enabled">Увімкнено</string>
@@ -1871,9 +1870,6 @@
   <string name="RowGradientBLTR">Знизу наліво, зверху направо</string>
   <string name="RowGradientList">Застосувати градієнт до фону списку</string>
   <string name="Copied">%s скопійовано до буферу обміну</string>
-  <string name="JoinChannel">
-\n\nПриєднуйтесь до офіційного каналу Plus Messenger:</string>
-  <string name="ChannelLink">https://telegram.me/plusmsgr</string>
   <string name="DownloadThemes">Завантажити теми</string>
   <string name="OfficialChannel">Офіційний канал</string>
   <string name="DialogsSettings">Діалоги</string>

@@ -975,9 +975,6 @@
   <string name="RowGradientBLTR">Alt Sol Üst Sağ</string>
   <string name="RowGradientList">Arkaplana gradyan uygula</string>
   <string name="Copied">Link şuraya kopyalandı: %s</string>
-  <string name="JoinChannel">
-Messenger Plus Resmi Kanalına Katıl</string>
-  <string name="ChannelLink">https://telegram.me/plusmsgr</string>
   <string name="DownloadThemes">Temaları indir</string>
   <string name="OfficialChannel">Resmi kanal</string>
   <string name="DialogsSettings">Diyaloglar</string>

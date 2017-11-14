@@ -712,7 +712,6 @@
   <string name="TelegramFaq">常見問題</string>
   <string name="TelegramFaqUrl">https://telegram.org/faq</string>
   <string name="PrivacyPolicy">私隱政策</string>
-  <string name="PrivacyPolicyUrl">http://plusmessenger.org/privacy</string>
   <string name="DeleteLocalization">刪除語言配置檔案？</string>
   <string name="IncorrectLocalization">錯誤的語言配置檔案</string>
   <string name="Enabled">啟用</string>
@@ -1668,8 +1667,6 @@
   <string name="RowGradientBLTR">左下至右上</string>
   <string name="RowGradientList">在列表背景套用漸變</string>
   <string name="Copied">%s 已複製至剪貼板</string>
-  <string name="JoinChannel">\n\n加入 Plus Messenger 官方頻道：</string>
-  <string name="ChannelLink">https://telegram.me/plusmsgr</string>
   <string name="DownloadThemes">下載主題</string>
   <string name="OfficialChannel">官方頻道</string>
   <string name="DialogsSettings">對話框</string>

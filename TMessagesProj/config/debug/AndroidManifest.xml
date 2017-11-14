@@ -25,7 +25,7 @@
         android:allowBackup="false"
         android:icon="@drawable/ic_launcher_beta"
         android:roundIcon="@drawable/ic_launcher_beta"
-        android:label="Plus beta"
+        android:label="Telegreat beta"
         tools:replace="android:icon, android:roundIcon"
         android:theme="@style/Theme.TMessages.Start"
         android:name="org.telegram.messenger.ApplicationLoader"
@@ -88,7 +88,7 @@
         <provider
             android:authorities="taipei.sean.telegram.plus.beta.android.provider.content"
             android:name="org.telegram.messenger.ModuleContentProvider"
-            android:label="Plus beta"
+            android:label="Telegreat beta"
             android:exported="true"
             android:permission="taipei.sean.telegram.plus.beta.android.provider.ACCESS" />
 

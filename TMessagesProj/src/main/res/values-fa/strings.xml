@@ -538,7 +538,6 @@ http://goo.gl/jnmjnZ</string>
   <string name="TelegramFaq">سوالات رایج تلگرام</string>
   <string name="TelegramFaqUrl">https://telegram.org/faq</string>
   <string name="PrivacyPolicy">سیاست های حریم خصوصی</string>
-  <string name="PrivacyPolicyUrl">http://plusmessenger.org/privacy</string>
   <string name="DeleteLocalization">فایل زبان پاک بشه ؟</string>
   <string name="IncorrectLocalization">فایل زبان خرابه</string>
   <string name="Enabled">فعال</string>
@@ -1323,9 +1322,6 @@ http://goo.gl/jnmjnZ</string>
   <string name="RowGradientBLTR">پایین-چپ بالا-راست</string>
   <string name="RowGradientList">اعمال گرادینت به زمینه لیست</string>
   <string name="Copied">%s به کلیپبورد کپی شد</string>
-  <string name="JoinChannel">
-\n\nبه کانال رسمی پلاس مسنجر بپیوندید</string>
-  <string name="ChannelLink">https://telegram.me/plusmsgrir</string>
   <string name="DownloadThemes">دانلود قالب ها</string>
   <string name="OfficialChannel">کانال رسمی</string>
   <string name="DialogsSettings">مکالمات</string>

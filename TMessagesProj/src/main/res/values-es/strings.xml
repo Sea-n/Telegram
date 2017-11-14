@@ -882,7 +882,6 @@
     <string name="TelegramFaq">Preguntas frecuentes</string>
     <string name="TelegramFaqUrl">https://telegram.org/faq/es</string>
     <string name="PrivacyPolicy">Política de privacidad</string>
-    <string name="PrivacyPolicyUrl">http://plusmessenger.org/privacy</string>
     <string name="DeleteLocalization">¿Eliminar traducción?</string>
     <string name="IncorrectLocalization">Archivo de traducción incorrecto</string>
     <string name="Enabled">Activadas</string>
@@ -1883,8 +1882,6 @@
     <string name="RowGradientBLTR">Abajo-Izquierda Arriba-Derecha</string>
     <string name="RowGradientList">Aplicar gradiente a fondo de lista</string>
     <string name="Copied">%s copiado al portapapeles</string>
-    <string name="JoinChannel">\n\nÚnete al canal oficial de Plus Messenger en español:</string>
-    <string name="ChannelLink">https://telegram.me/plusmsgres</string>
     <string name="DownloadThemes">Descargar temas</string>
     <string name="OfficialChannel">Canal oficial</string>
     <string name="DialogsSettings">Chats</string>

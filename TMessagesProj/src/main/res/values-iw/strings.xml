@@ -1217,9 +1217,6 @@
   <string name="RowGradientBLTR">למטה משמאל למעלה מימין</string>
   <string name="RowGradientList">החל שיפוע לרשימת רקע</string>
   <string name="Copied">%s הועתק ללוח</string>
-  <string name="JoinChannel">
-\n\nהתחבר לערוץ הרשמי של טלגרם פלוס:</string>
-  <string name="ChannelLink">https://telegram.me/plusmsgrhe</string>
   <string name="DownloadThemes">הורד עיצובים</string>
   <string name="OfficialChannel">ערוץ רשמי</string>
   <string name="DialogsSettings">תיבות דו שיח</string>

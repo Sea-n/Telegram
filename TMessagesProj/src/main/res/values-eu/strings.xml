@@ -874,7 +874,6 @@ eta ahots-mezua baztertu nahi duzula?</string>
   <string name="TelegramFaq">Telegram FAQ</string>
   <string name="TelegramFaqUrl">https://telegram.org/faq</string>
   <string name="PrivacyPolicy">Pribatutasun-politika</string>
-  <string name="PrivacyPolicyUrl">https://telegram.org/privacy</string>
   <string name="DeleteLocalization">Itzulpena ezabatu nahi al duzu?</string>
   <string name="IncorrectLocalization">Itzulpen-fitxategia okerra da</string>
   <string name="Enabled">Gaituta</string>
@@ -1867,9 +1866,6 @@ eta ahots-mezua baztertu nahi duzula?</string>
   <string name="RowGradientBLTR">Hondo-Ezkerrekoa Gailur-Ezkuinekoa</string>
   <string name="RowGradientList">Aplikatu gradiantea hondo listara</string>
   <string name="Copied">%s kopiatuta</string>
-  <string name="JoinChannel">
-\n\nZatoz Plus Messenger-en kanal ofizialera:</string>
-  <string name="ChannelLink">https://telegram.me/plusmsgr</string>
   <string name="DownloadThemes">Deskargatu gaiak</string>
   <string name="OfficialChannel">Kanal ofiziala</string>
   <string name="DialogsSettings">Elkarrizketak</string>

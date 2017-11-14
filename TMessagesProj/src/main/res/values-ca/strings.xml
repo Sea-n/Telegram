@@ -870,7 +870,6 @@
   <string name="TelegramFaq">PMF del Telegram</string>
   <string name="TelegramFaqUrl">https://telegram.org/faq</string>
   <string name="PrivacyPolicy">Política de Privadesa</string>
-  <string name="PrivacyPolicyUrl">http://plusmessenger.org/privacy</string>
   <string name="DeleteLocalization">Voleu eliminar el paquet de llengua?</string>
   <string name="IncorrectLocalization">El paquet de llengua no és vàlid</string>
   <string name="Enabled">Activades</string>
@@ -1862,8 +1861,6 @@
   <string name="RowGradientBLTR">Baix-Esquerra, Dalt-Dreta</string>
   <string name="RowGradientList">Aplica el gradient al fons de la llista</string>
   <string name="Copied">S\'ha copiat %s al porta-retalls</string>
-  <string name="JoinChannel">\n\nUniu-vos al canal oficial del Plus Messenger:</string>
-  <string name="ChannelLink">https://telegram.me/plusmsgr</string>
   <string name="DownloadThemes">Baixa estils nous</string>
   <string name="OfficialChannel">Canal oficial</string>
   <string name="DialogsSettings">Xats</string>

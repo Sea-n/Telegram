@@ -890,7 +890,6 @@
     <string name="TelegramFaq">Telegram 常見問題</string>
     <string name="TelegramFaqUrl">https://telegram.org/faq</string>
     <string name="PrivacyPolicy">隱私政策</string>
-    <string name="PrivacyPolicyUrl">https://telegram.org/privacy</string>
     <string name="DeleteLocalization">刪除本地化檔案？</string>
     <string name="IncorrectLocalization">不正確的本地化檔案</string>
     <string name="NotificationsService">背景常駐服務</string>
@@ -1499,7 +1498,6 @@
     <string name="AndMoreTyping_two">還有 %1$d 個人在輸入中</string>
     <string name="AndMoreTyping_few">還有 %1$d 個人在輸入中</string>
     <string name="AndMoreTyping_many">還有 %1$d 個人在輸入中</string>
-    <string name="AndMoreTyping_other">還有 %1$d 個人在輸入中</string>
     <string name="NewMessages_zero">沒有新訊息</string>
     <string name="NewMessages_one">%1$d 則新訊息</string>
     <string name="NewMessages_two">%1$d 則新訊息</string>
@@ -1929,8 +1927,6 @@
     <string name="RowGradientBLTR">左下至右上</string>
     <string name="RowGradientList">將漸層套用到清單背景</string>
     <string name="Copied">%s 已複製到剪貼簿</string>
-    <string name="JoinChannel">\n\n加入 Plus Messenger 的官方頻道：</string>
-    <string name="ChannelLink">https://telegram.me/plusmsgr</string>
     <string name="DownloadThemes">下載主題</string>
     <string name="OfficialChannel">官方頻道</string>
     <string name="DialogsSettings">對話框</string>

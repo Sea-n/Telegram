@@ -24,17 +24,15 @@ import org.telegram.messenger.R;
 import org.telegram.messenger.UserConfig;
 import org.telegram.messenger.support.widget.RecyclerView;
 import org.telegram.ui.ActionBar.Theme;
-import org.telegram.ui.Cells.DrawerActionCell;
 import org.telegram.ui.Cells.DividerCell;
-import org.telegram.ui.Cells.EmptyCell;
+import org.telegram.ui.Cells.DrawerActionCell;
 import org.telegram.ui.Cells.DrawerProfileCell;
+import org.telegram.ui.Cells.EmptyCell;
 import org.telegram.ui.Cells.TextInfoCell;
 import org.telegram.ui.Components.RecyclerListView;
 
 import java.util.ArrayList;
 import java.util.Locale;
-
-import static android.R.attr.type;
 
 public class DrawerLayoutAdapter extends RecyclerListView.SelectionAdapter {
 
@@ -200,7 +198,7 @@ public class DrawerLayoutAdapter extends RecyclerListView.SelectionAdapter {
             items.add(new Item(/*10*/callsRow, LocaleController.getString("Calls", R.string.Calls), R.drawable.menu_calls));
         }
         //plus
-        items.add(new Item(themesRow, LocaleController.getString("DownloadThemes", R.string.DownloadThemes), R.drawable.menu_themes));
+//        items.add(new Item(themesRow, LocaleController.getString("DownloadThemes", R.string.DownloadThemes), R.drawable.menu_themes));
         items.add(new Item(themingRow, LocaleController.getString("Theming", R.string.Theming), R.drawable.menu_theming));
         //
         //items.add(new Item(inviteFriendsRow, LocaleController.getString("InviteFriends", R.string.InviteFriends), R.drawable.menu_invite));
@@ -208,7 +206,7 @@ public class DrawerLayoutAdapter extends RecyclerListView.SelectionAdapter {
         //plus
         items.add(new Item(plusSettingsRow, LocaleController.getString("PlusSettings", R.string.PlusSettings), R.drawable.menu_plus));
         items.add(new Item(channelRow, LocaleController.getString("OfficialChannel", R.string.OfficialChannel), R.drawable.menu_broadcast));
-        items.add(new Item(communityRow, LocaleController.getString("Community", R.string.Community), R.drawable.menu_forum));
+//        items.add(new Item(communityRow, LocaleController.getString("Community", R.string.Community), R.drawable.menu_forum));
         items.add(new Item(chatsStatsRow, LocaleController.getString("ChatsCounters", R.string.ChatsCounters), R.drawable.profile_list));
         items.add(null);
         //

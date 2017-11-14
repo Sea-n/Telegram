@@ -882,7 +882,6 @@
   <string name="TelegramFaq">Telegram FAQ</string>
   <string name="TelegramFaqUrl">https://telegram.org/faq</string>
   <string name="PrivacyPolicy">プライバシーポリシー</string>
-  <string name="PrivacyPolicyUrl">https://telegram.org/privacy</string>
   <string name="DeleteLocalization">言語ファイルを削除しますか？</string>
   <string name="IncorrectLocalization">言語ファイルが間違っています</string>
   <string name="Enabled">有効</string>
@@ -1885,10 +1884,6 @@ Telegramのクラウド内に存在し、
   <string name="RowGradientBLTR">下左－上右</string>
   <string name="RowGradientList">グラデーションを一覧に適用する</string>
   <string name="Copied">%sをクリップボードにコピーしました</string>
-  <string name="JoinChannel">
-
-\n\nPlus Messengerの公式チャンネルです:</string>
-  <string name="ChannelLink">https://telegram.me/plusmsgr</string>
   <string name="DownloadThemes">テーマをダウンロード</string>
   <string name="OfficialChannel">公式チャンネル</string>
   <string name="DialogsSettings">ダイアログ</string>
