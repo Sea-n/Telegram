@@ -1385,7 +1385,7 @@
   <string name="PermissionDrawAboveOtherApps">Telegram потребує доступу, щоб малювати поверх інших програм, щоб відтворювати відео в режимі Зображення в зображенні. </string>
   <string name="PermissionOpenSettings">НАЛАШТУВАННЯ</string>
   <!--Intro view-->
-  <string name="Page1Title">Plus Messenger</string>
+  <string name="Page1Title">Telegreat</string>
   <string name="Page2Title">Швидкий</string>
   <string name="Page3Title">Безкоштовний</string>
   <string name="Page4Title">Безпечний</string>

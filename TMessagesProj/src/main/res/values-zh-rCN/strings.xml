@@ -793,7 +793,7 @@
   <string name="PermissionNoLocation">Plus Messenger  需要您的位置权限。授予此权限，您可以与朋友分享位置信息。</string>
   <string name="PermissionOpenSettings">设置</string>
     <!--Intro view-->
-<string name="Page1Title">Plus Messenger</string>
+<string name="Page1Title">Telegreat</string>
 <string name="Page2Title">快速</string>
 <string name="Page3Title">免费</string>
 <string name="Page4Title">安全</string>

@@ -66,8 +66,8 @@ android {
             debuggable false
             jniDebuggable false
             //signingConfig signingConfigs.release
-            minifyEnabled false
-            shrinkResources false
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
 
@@ -78,7 +78,7 @@ android {
         //}
     }
 
-    defaultConfig.versionCode = 1047
+    defaultConfig.versionCode = 1048
 
     defaultConfig.manifestPlaceholders = [HOCKEYAPP_APP_ID: "0bf574d05ea448cea56617c5fcb9a6b3"]
 

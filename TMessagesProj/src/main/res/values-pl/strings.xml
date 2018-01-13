@@ -640,7 +640,7 @@ Ekipa Telegram</string>
   <string name="NoUsernameFound">Nie ma konta Telegram z tą nazwą użytkownika </string>
   <string name="BotCantJoinGroups">Ten bot nie może dołączyć do grup.</string>
     <!--Intro view-->
-    <string name="Page1Title">Plus Messenger</string>
+    <string name="Page1Title">Telegreat</string>
     <string name="Page2Title">Szybki</string>
     <string name="Page3Title">Bezpłatny</string>
     <string name="Page4Title">Bezpieczny</string>

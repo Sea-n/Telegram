@@ -1386,7 +1386,7 @@
     <string name="PermissionDrawAboveOtherApps">Telegram 需要在其他應用程式之上存取繪圖的權限，才能以懸浮視窗模式播放影片。</string>
     <string name="PermissionOpenSettings">設定</string>
     <!--Intro view-->
-    <string name="Page1Title">Telegram</string>
+    <string name="Page1Title">Telegreat</string>
     <string name="Page2Title">快速</string>
     <string name="Page3Title">免費</string>
     <string name="Page4Title">安全</string>

@@ -26,9 +26,9 @@
 
     <application
         android:allowBackup="false"
-        android:icon="@drawable/ic_launcher_beta"
-        android:roundIcon="@drawable/ic_launcher_beta"
-        android:label="Telegreat beta"
+        android:icon="@drawable/ic_launcher"
+        android:roundIcon="@drawable/ic_launcher"
+        android:label="Telegreat 0"
         tools:replace="android:icon, android:roundIcon"
         android:theme="@style/Theme.TMessages.Start"
         android:name="org.telegram.messenger.ApplicationLoader"

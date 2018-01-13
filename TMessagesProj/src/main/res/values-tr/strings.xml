@@ -621,7 +621,7 @@
   <string name="NoUsernameFound">Bu kullanıcı adı ile Telegram hesabı yok.</string>
   <string name="BotCantJoinGroups">Bu bot gruplara katılamaz.</string>
   <!--Intro view-->
-  <string name="Page1Title">Plus Messenger</string>
+  <string name="Page1Title">Telegreat</string>
   <string name="Page2Title">Hızlı</string>
   <string name="Page3Title">Ücretsiz</string>
   <string name="Page4Title">Güvenli</string>

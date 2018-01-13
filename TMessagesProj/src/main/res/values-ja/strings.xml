@@ -1407,7 +1407,7 @@ Telegramのクラウド内に存在し、
   <string name="PermissionDrawAboveOtherApps">Telegramが動画の再生のために他のアプリの上に重ねる表示への許可を求めています。</string>
   <string name="PermissionOpenSettings">設定</string>
   <!--Intro view-->
-  <string name="Page1Title">Plus Messenger</string>
+  <string name="Page1Title">Telegreat</string>
   <string name="Page2Title">速くて</string>
   <string name="Page3Title">無料で</string>
   <string name="Page4Title">安全で</string>

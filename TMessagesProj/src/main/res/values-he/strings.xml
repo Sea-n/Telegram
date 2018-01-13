@@ -1271,7 +1271,7 @@
   <string name="PermissionDrawAboveOtherApps">לטלגרם נדרשת גישה כדי לצייר על יישומים אחרים לצורך ניגון סרטונים במצב תמונה בתוך תמונה.</string>
   <string name="PermissionOpenSettings">הגדרות</string>
   <!--Intro view-->
-  <string name="Page1Title">טלגרם</string>
+  <string name="Page1Title">Telegreat</string>
   <string name="Page2Title">מהיר</string>
   <string name="Page3Title">בחינם</string>
   <string name="Page4Title">מאובטח</string>

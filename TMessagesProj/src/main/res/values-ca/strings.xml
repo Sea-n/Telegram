@@ -1385,7 +1385,7 @@
   <string name="PermissionDrawAboveOtherApps">El Telegram necessita poder dibuixar a sobre d\'altres aplicacions per a reproduir vídeos en mode «Imatge sobre imatge».</string>
   <string name="PermissionOpenSettings">CONFIGURACIÓ</string>
   <!--Intro view-->
-  <string name="Page1Title">Plus Messenger</string>
+  <string name="Page1Title">Telegreat</string>
   <string name="Page2Title">Ràpid</string>
   <string name="Page3Title">Gratuït</string>
   <string name="Page4Title">Segur</string>

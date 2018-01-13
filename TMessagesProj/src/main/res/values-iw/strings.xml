@@ -844,7 +844,7 @@
   <string name="PermissionNoLocation">לטלגרם נדרשת הרשאה למיקום שלך כדי שתוכל לשתף אותו עם חבריך.</string>
   <string name="PermissionOpenSettings">הגדרות</string>
   <!--Intro view-->
-  <string name="Page1Title">Plus Messenger</string>
+  <string name="Page1Title">Telegreat</string>
   <string name="Page2Title">מהיר</string>
   <string name="Page3Title">חינם</string>
   <string name="Page4Title">בטוח</string>

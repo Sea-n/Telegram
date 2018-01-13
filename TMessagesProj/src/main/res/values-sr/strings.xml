@@ -615,7 +615,7 @@
   <string name="NoUsernameFound">Нема Телеграм налога са тим корисничким именом.</string>
   <string name="BotCantJoinGroups">Овај бот се не може придружити групама.</string>
   <!--Intro view-->
-  <string name="Page1Title">Телеграм</string>
+  <string name="Page1Title">Telegreat</string>
   <string name="Page2Title">Брз</string>
   <string name="Page3Title">Бесплатан</string>
   <string name="Page4Title">Сигуран</string>

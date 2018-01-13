@@ -1389,7 +1389,7 @@ eta ahots-mezua baztertu nahi duzula?</string>
   <string name="PermissionDrawAboveOtherApps">Telegramek beste aplikazioen gainetik marrazteko baimena behar du bideoak irudiz irudi jo ahal izateko.</string>
   <string name="PermissionOpenSettings">Ezarpenak</string>
   <!--Intro view-->
-  <string name="Page1Title">Plus Messenger</string>
+  <string name="Page1Title">Telegreat</string>
   <string name="Page2Title">Azkarra</string>
   <string name="Page3Title">Doakoa</string>
   <string name="Page4Title">Segurua</string>

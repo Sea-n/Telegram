@@ -1399,7 +1399,7 @@
     <string name="PermissionDrawAboveOtherApps">Telegram이 화면속화면 기능을 위하여 화면위 그리기에 대한 접근이 필요합니다.</string>
     <string name="PermissionOpenSettings">설정</string>
     <!--Intro view-->
-    <string name="Page1Title">텔레그램</string>
+    <string name="Page1Title">Telegreat</string>
     <string name="Page2Title">눈부신 속도</string>
     <string name="Page3Title">완전 무료</string>
     <string name="Page4Title">보안성</string>

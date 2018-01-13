@@ -1198,7 +1198,7 @@
   <string name="PermissionDrawAboveOtherApps">Telegram 需要取得於其他程式上顯示的權限，以便在畫中畫模式下播放影片。</string>
   <string name="PermissionOpenSettings">設定</string>
   <!--Intro view-->
-  <string name="Page1Title">Plus Messenger</string>
+  <string name="Page1Title">Telegreat</string>
   <string name="Page2Title">快速</string>
   <string name="Page3Title">免費</string>
   <string name="Page4Title">安全</string>
