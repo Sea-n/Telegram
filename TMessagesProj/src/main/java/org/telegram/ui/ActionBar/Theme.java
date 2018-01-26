@@ -2510,7 +2510,7 @@ public class Theme {
 
     private static void getPlusThemeFileValues() {
         SharedPreferences themePrefs = ApplicationLoader.applicationContext.getSharedPreferences(AndroidUtilities.THEME_PREFS, AndroidUtilities.THEME_PREFS_MODE);
-        usePlusTheme = themePrefs.getBoolean("usePlusTheme", true);
+        usePlusTheme = themePrefs.getBoolean("usePlusTheme", false);
         SharedPreferences prefs = ApplicationLoader.applicationContext.getSharedPreferences("mainconfig", Activity.MODE_PRIVATE);
         String theme = prefs.getString("prevTheme", null);
         if (usePlusTheme && theme == null) {
@@ -3870,7 +3870,7 @@ public class Theme {
 
     public static void updateMainColors(){
         SharedPreferences themePrefs = ApplicationLoader.applicationContext.getSharedPreferences(AndroidUtilities.THEME_PREFS, AndroidUtilities.THEME_PREFS_MODE);
-        usePlusTheme = themePrefs.getBoolean("usePlusTheme", true);
+        usePlusTheme = themePrefs.getBoolean("usePlusTheme", false);
         defColor = themePrefs.getInt("themeColor", AndroidUtilities.defColor);
         dialogColor = themePrefs.getInt("dialogColor", defColor);
         lightColor = AndroidUtilities.getIntDarkerColor("themeColor", -0x40);
